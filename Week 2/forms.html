@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <h2>Search form example</h2>
+    <form method="get">
+        <!-- It's better for accessibility to explicitly link the labels to their related field by using the 'for' attribute -->
+        <label for="q">Search: </label>
+        <input type="text" id="q" name="query" placeholder="e.g. red fox">
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Login form example</h2>
+    <form method="post"><!-- get is sued by default if method="post" is not specified -->
+        <div>
+            <label for="u">Username: </label>
+            <input type="text" id="u" name="u" placeholder="John Doe">
+        </div>
+        
+        <div>
+            <label for="pw">Password: </label>
+            <input type="password" id="pw" name="pw" placeholder="********">
+        </div>
+        
+        <button type="submit">Login</button>
+    </form>
+
+    <h2>Random form example</h2>
+    <p>The following is just a form used to test out a few form fields.</p>
+    <form method="post">
+
+        <div>
+            <label for="num">Number of people in your household: </label>
+            <input type="number" id="num" name="num" min="1" value="1"><!-- For inputs, you can define 
+            a default value using the value attribute-->
+        </div>
+
+        <div>
+            <label for="phone">Your phone number: </label>
+            <input type="tel" id="phone" name="phone" placeholder="555-555-5555" required> <!-- You can define a regular expression
+            (look up later) to specify a valid format for the phone number using the pattern attribute -->
+        </div>
+
+        <div>
+            <label for="email">Your email: </label>
+            <!-- email fields look like regualr text fields but will display the @ sybmol in the lower corner of mobile keyboards -->
+            <input type="email" id="email" name="email" placeholder="john.doe@example.com">
+        </div>
+
+        <div>
+            <input type="hidden" name="myhiddenfield" value="My hidden text"> <!-- sometimes you just need to pass along
+        data that should not be visible to others -->
+        </div>
+
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="y"> <!-- For checkboxes/radio buttons, you should
+            always sepcify a value. -->
+            <label for="subscribe">Subscribe to our newsletter</label>
+        </div>
+
+        <fieldset><!-- A fieldset is used to group related fields within a larger form. -->
+            <legend>Select the topics that you're interested in: </legend>
+            <input type="checkbox" id="tech" name="interests" value="tech">
+            <label for="tech">Technology</label>
+
+            <input type="checkbox" id="art" name="interests" value="art">
+            <label for="art">Art</label>
+
+            <input type="checkbox" id="garden" name="interests" value="garden">
+            <label for="garden">Gardening</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select your age group: </legend>
+            <!-- You should give all related radio buttons (part of the same group) the same name to ensure they behave as a group.
+             If they're given different names, they are considered unrelated and will not behave as a group. -->
+            <input type="radio" id="20s" name="age" value="20s">
+            <label for="20s">20 - 29</label>
+            <input type="radio" id="30s" name="age" value="30s">
+            <label for="30s">30 - 39</label>
+            <input type="radio" id="40plus" name="age" value="20+">
+            <label for="40plus">40+</label>
+        </fieldset>
+
+        <div>
+            <label for="reason">Reason for your message:</label>
+            <select id="reason" name="reason">
+                <!-- For a dummy option, used disabled to prevent users from selecting the dummy option and use selected
+                 to ensure the dummy option chosen when the form is first loaded. -->
+                <option value="" disabled selected>-- Select one --</option>
+                <option value="sales">Sales enquires</option>
+                <optgroup label="Other">
+                    <option value="media">Media enquires</option>
+                    <option value="legal">Legal enquires</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="message">Your message:</label>
+        </div>
+        
+        <div>
+            <!-- Any text or whitespace within the textarea opening and closing tags will be taken as the default initial value 
+             of the textareas=. If you want your placeholder text to show, you must not have any extra characters or whitespace
+             or spaces between the opening and closing tags. -->
+            <textarea id="message" name="message" placeholder="Your message here..." rows="8" cols="40"></textarea>
+        </div>
+
+        <button type="submit">Submit</button> <!-- type="submit" is for submitting the form this button is in -->
+        <button type="reset">Clear form</button> <!-- type="reset" will reset all fields in this form back to the defaults -->
+        <button type="button">General button</button><!-- type="button" is a general button for which YOU have to write 
+        a script to execute upon clicking the button -->
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 Semantic Layout Tags</title>
+</head> 
+<body>
+    <header>
+        <!-- Heirarchically, you would expect this to be an h1, but for better SEO (search engine optimization) and accessibility, 
+         it's recommended to reserve your -->
+         <h2>
+            <a href="/">Site Name</a>
+         </h2>
+         <!-- aria-label labels an element for screen reader users. This is useful for nav if you have multiple nav-->
+         <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+         </nav>
+    </header>
+    <main>
+        <h1>This is an article title</h1>
+        <p>Blah, blah. This is some article text.</p>
+        <h2>Subheading for article</h2>
+        <p>This is more article content...</p>
+        <!-- In this case (below), aside, section or footer can work. -->
+         <aside>
+            <h2>Related news</h2>
+            <ul>
+                <li><h3><a href="#">Random news articles are everywhere</a></h3></li>
+                <li><h3><a href="#">Cats have taken over the Internet</a></h3></li>
+            </ul>
+         </aside>
+    </main>
+    <aside>
+        <section>
+            <h2>Local news</h2>
+            <ul>
+                <li><a href="#">Article 1</a></li>
+                <li><a href="#">Article 2</a></li>
+            </ul>
+            <a href="#">Read more local news</a>
+        </section>
+        <section>
+            <h2>Today's weather</h2>
+            <p>Currently 22C in Toronto, ON</p>
+        </section>
+    </aside>
+
+    <footer>
+        <div>&copy; Copyright Site Name, 2023.</div>
+    </footer>
+</body>
+</html>
