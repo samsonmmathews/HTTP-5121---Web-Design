@@ -7,19 +7,21 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <h1><a href="#">Game Reviews</a></h1>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </nav>
+    <div class="header">
+        <h1><a href="#">Game Reviews</a></h1>
+        <nav>
+            <ul id="navlist">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <main>
         <article>
             <h2>Ghost of Tsushima</h2>
-            <img src="images/Ghost_of_Tsushima.jpg" alt="Ghost of Tsushima cover" />
+            <img src="images/Ghost_of_Tsushima.jpg" alt="Ghost of Tsushima cover" >
             <!-- Image url: https://en.wikipedia.org/wiki/File:Ghost_of_Tsushima.jpg#/media/File:Ghost_of_Tsushima.jpg -->
             <p>
                 This is an absolutely gorgeous open-world game developed by 
@@ -39,7 +41,7 @@
 
         <article>
             <h2>The Last of Us Part I</h2>
-            <img src="images/The_Last_of_Us_Part_I_cover.jpg" alt="The Last of Us Part I cover" />
+            <img src="images/The_Last_of_Us_Part_I_cover.jpg" alt="The Last of Us Part I cover" >
             <!-- Image url: https://en.wikipedia.org/wiki/File:The_Last_of_Us_Part_I_cover.jpg#/media/File:The_Last_of_Us_Part_I_cover.jpg -->
             <p>
                 This game tells the story of how there was an outbreak of a deadly virus and 
@@ -57,7 +59,7 @@
 
         <article>
             <h2>Red Dead Redemption 2</h2>
-            <img src="images/Red_Dead_Redemption_II.jpg" alt="Red Dead Redemption 2 cover" />
+            <img src="images/Red_Dead_Redemption_II.jpg" alt="Red Dead Redemption 2 cover" >
             <!-- Image url: https://en.wikipedia.org/wiki/File:Red_Dead_Redemption_II.jpg#/media/File:Red_Dead_Redemption_II.jpg -->
             <p>
                 Set during the early 20th century, the story follows Arthur Morgan, an outlaw
@@ -77,33 +79,53 @@
 
         <aside>
             <section>
-                <h3>Recommended articles</h3>
-                <ul>
-                    <li><a href="#">Top 10 video games of all time</a></li>
-                    <li><a href="#">First-person games</a></li>
-                    <li><a href="#">Best games to play with friends</a></li>
-                </ul>
+                <div>
+                    <h3>Recommended articles</h3>
+                    <ul>
+                        <li><a href="#">Top 10 video games of all time</a></li>
+                        <li><a href="#">First-person games</a></li>
+                        <li><a href="#">Best games to play with friends</a></li>
+                    </ul>
+                </div>
             </section>
 
             <section>
-                <h3>Subscribe to my newsletter</h3>
-                <form>
-                    <input type="email" placeholder="Enter your email.." required />
-                    <button type="submit">Subscribe</button>
-                </form>
+                <div>
+                    <h3>Subscribe to my newsletter</h3>
+                    <form>
+                        <input type="email" placeholder="Enter your email.." required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
             </section>
         </aside>
 
         <section>
-            <h3>Leave a comment about my blog</h3>
-            <form>
-                <label for="name">Name</label>
-                <input id="name" type="text" required/>
-                <label for="comment">Comment</label>
-                <textarea id="comment" rows="5" required></textarea>
-                <button type="submit">Submit your comment</button>
-            </form>
+            <div>
+                <h3>Leave a comment about my blog</h3>
+                <form>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" required>
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" rows="5" required></textarea>
+                    <button type="submit">Submit your comment</button>
+                </form>
+            </div>
         </section>
     </main>
+
+    <footer>
+        <div>
+            <nav>
+                <ul id="navlist">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+        </nav>
+        </div>
+        <p>&copy; 2025 Samson Maveli Mathews. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
