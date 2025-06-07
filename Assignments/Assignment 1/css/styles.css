@@ -28,7 +28,7 @@ a:active {
     text-align: center;
 }
 
-#navlist li {
+#navlist_top li, #navlist_bottom li {
     display: inline;
     padding-right: 1.6em;
     margin: 0 .5em 0 -.5em;
