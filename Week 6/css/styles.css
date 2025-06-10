@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Open+Sans:wght@300&display=swap');
+
+/*************************************************************
+ * TABLE OF CONTENTS
+ * =================
+ * 1. GENERAL/DEFAULT STYLES
+ * 2. HEADER
+ * -- 2a. Site name and logo
+ * -- 2b. Navigation
+ * 3. MAIN CONTENT
+ * -- 3a. Hero
+ * -- 3b. Other sections
+ * 4. FOOTER
+ * -- 4a. Navigation
+ *************************************************************/
+:root {
+    --accent: #E0376A;
+}
+/* 1. GENERAL/DEFAULT STYLES */
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    font: normal 1em/1.2 "Openb Sans", sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase; /* force all caps */
+}
+a:hover {
+    text-decoration: none;
+}
+a.button button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9375em;
+    padding: 0.8em;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 0.67em;
+
+}
+a:link, a:visited {
+    color: var(--accent);
+    text-decoration: underline;
+}
+.content-wrapper {
+    max-width: 1300px;
+    padding: 1.25em; /* 20px padding all around */
+    margin: 0 auto; /* auto left/right margins will center
+    any block element within it's parent container */
+}
+.centered {
+    text-align: center;
+}
+section.content-wrapper {
+    padding: 63px 0 76px 0 !important;
+}
+.pink-bg {
+    background-color: var(--accent);
+}
+.pink-bg a:link,
+.pink-bg a:visited {
+    color: #fff;
+}
+.pink-bg a:hover {
+    color: #000;
+}
+
+/* 2. HEADER */
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header a:link,
+#header a:visited {
+    color: #000;
+    text-decoration: none; /* remove underline */
+}
+
+/* -- 2a. Site name and logo */
+#logo-and-site-name {
+    font-size: 2em;
+    margin: 1.125 em 0;
+}
+
+#logo-and-site-name a::before {
+    content: "(^._.^)";
+    color:var(--accent);
+}
+/* -- 2b. Navigation */
+#main-navigation {
+    font-size: 1.5em; /* 1.5em = 24px / 16px */
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0; /* remove default padding */
+}
+
+/* 3. MAIN CONTENT */
+.hero-text {
+    color: #fff;
+    background: url();
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.hero-text h1 {
+    font-size: 6em;
+    text-shadow: 5px 5px 0 var(--accent);
+}
+
+/* -- 3a. Hero */
+
+/* -- 3b. Other sections */
+.feature-text {
+    font-size: 2em;
+}
+#learn-section h3 a {
+    text-decoration: none;
+}
+#learn-section .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#learn-section .section-title {
+    flex: 0;
+}
+
+/* 4. FOOTER */
+
+/* -- 4a. Navigation */
