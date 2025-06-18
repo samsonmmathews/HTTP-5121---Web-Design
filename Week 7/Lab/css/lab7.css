@@ -147,3 +147,24 @@ a:hover {
 
 /* 5. MEDIA QUERIES */
 
+@media screen and (max-width:768px) {
+  /* tablet styles */
+  .articles-container .article:nth-child(3) {
+    flex: 1 0 100%;
+  }
+
+  .gallery-container .item{
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  /* phone styles */
+  #main-menu ul {
+    flex-direction: column;
+  }
+  
+  .articles-container .article {
+    flex: 1 0 100%;
+  }
+}
